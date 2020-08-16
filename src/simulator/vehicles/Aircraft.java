@@ -14,7 +14,7 @@ public class Aircraft {
 	protected long id;
 	protected String name;
 	protected Coordinates coordinates;
-	private long idCounter = 0;
+	private static long idCounter = 1;
 	
 	protected  Aircraft(String name, Coordinates coordinates) {
 		this.name = name;
@@ -22,7 +22,15 @@ public class Aircraft {
 		this.id = this.nextId();
 	}
 	
-	private long nextId(){
+	private long nextId(){;
 		return (idCounter++);
+	}
+	
+	public long getId() {
+		return (this.id);
+	}
+	
+	public String getName() {
+		return (this.name);
 	}
 }

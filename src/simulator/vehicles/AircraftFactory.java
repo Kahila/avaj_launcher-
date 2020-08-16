@@ -9,7 +9,7 @@
 package simulator.vehicles;
 import simulator.vehicles.Coordinates;
 
-abstract class AircraftFactory {
+public class AircraftFactory {
 	public Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
 		Coordinates coordinates = new Coordinates(longitude, latitude, height); // setting coordinates using constructor 
 		JetPlane jetPlane = null;

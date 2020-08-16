@@ -11,30 +11,50 @@ import java.io.IOException;
  * */
 
 import java.util.Scanner;
-
-import simulator.vehicles.Aircraft;
-import simulator.vehicles.Helicopter;
+import simulator.vehicles.*;
+import simulator.WeatherTower;
+//import simulator.vehicles.Aircraft;
+//import simulator.vehicles.Helicopter;
 
 public class Main {
 
 	public static void main(String[] args) {
-//		System.out.println("Reading file real quick0");
-//		try {
-//			File myobj = new File("D:\\workstation\\avaj_launchar\\txt/data.txt");
-//			Scanner myReader = new Scanner(myobj);
-//			int i = 0;
-//			while(myReader.hasNextLine()) {
-//				String data = myReader.nextLine();
-//				String str[] = data.split(" ");
-//				if (i!=0)
-//					System.out.println("Tower says: "+str[0]+ "#" + str[1]+"("+i+") registered to weather tower.");					
-//				i++;
-//			}
-//			myReader.close();
-//		}catch(FileNotFoundException e) {
-//			e.printStackTrace();
-//			System.out.println("something broken cuz");
-//		}
+		try {
+			File myobj = new File("D:\\workstation\\avaj_launchar\\txt/data.txt");
+			
+			WeatherTower tower = new WeatherTower();
+			AircraftFactory factory = new AircraftFactory();
+			
+			Scanner myReader = new Scanner(myobj);
+			int i = 0;
+			while(myReader.hasNextLine()) {
+				String data = myReader.nextLine();
+				String str[] = data.split("\t+| ");
+				int height = 0, longitude = 0, latitude = 0;
+				String name = "";
+				if (i!=0)
+				{
+					name = str[1];
+					longitude = Integer.parseInt(str[2]);
+					latitude = Integer.parseInt(str[3]);
+					height = Integer.parseInt(str[4]);
+					
+					tower.reg(factory.newAircraft(str[0], name, longitude, latitude, height));
+					
+					//System.out.println(longitude);					
+				}
+				i++;
+			}
+			while (i > 0)
+			{
+				tower.changeWeather();
+				i--;
+			}
+			myReader.close();
+		}catch(FileNotFoundException e) {
+			e.printStackTrace();
+			System.out.println("something broken cuz");
+		}
 		
 	}
 

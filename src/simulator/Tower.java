@@ -22,11 +22,11 @@ public class Tower{
 		observers.add(flyable);
 		
 		if (flyable instanceof JetPlane) {
-			System.out.printf("Tower says: JetPlane#&s(%d)", ((JetPlane)flyable).getName(), ((JetPlane)flyable).getId());
+			System.out.printf("Tower says: JetPlane#%s(%d) registered to weather tower\n", ((JetPlane)flyable).getName(), ((JetPlane)flyable).getId());
 		}else if (flyable instanceof Helicopter) {
-			System.out.printf("Tower says: Helicopter#&s(%d)", ((Helicopter)flyable).getName(), ((Helicopter)flyable).getId());
+			System.out.printf("Tower says: Helicopter#%s(%d) registered to weather tower\n", ((Helicopter)flyable).getName(), ((Helicopter)flyable).getId());
 		}else if (flyable instanceof Baloon) {
-			System.out.printf("Tower says: Baloon#&s(%d)", ((Baloon)flyable).getName(), ((Baloon)flyable).getId());
+			System.out.printf("Tower says: Baloon#%s(%d) registered to weather tower\n", ((Baloon)flyable).getName(), ((Baloon)flyable).getId());
 		}
 	}
 
@@ -36,7 +36,7 @@ public class Tower{
 	
 	protected void conditionsChanged() {//notify all observers of changes made
 		for (Flyable ob: observers) {
-			ob.updateCondition();
+				ob.updateCondition();
 		}
 	}
 }
