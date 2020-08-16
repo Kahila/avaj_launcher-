@@ -29,6 +29,7 @@ abstract class AircraftFactory {
 			baloon = new Baloon(name, coordinates);
 			return (baloon);
 		}
+		System.exit(-1);
 		return (null);
 	}
 }

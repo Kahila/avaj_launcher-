@@ -11,17 +11,21 @@ package simulator;
 import weather.WeatherProvider;
 import simulator.Tower;
 import simulator.vehicles.Coordinates;
+import simulator.vehicles.Flyable;
 
 public class WeatherTower extends Tower{
 	
 	public String getWeather(Coordinates coordinates) { //this method will be used to generate weather
-		WeatherProvider provider = null;
-		
-		provider.getProvider();
+		WeatherProvider provider = WeatherProvider.getProvider();
 		return (provider.getCurrentWeather(coordinates));
 	}
 	
-	public void changeWeather() {//update the state and call conditionChanged method to update the condition
-		
+	public void changeWeather() {//make changes to the coordinates accordingly
+		this.conditionsChanged();
+	}
+	
+	public void reg(Flyable flyable) {
+		this.register(flyable);
+		flyable.registerTower(this);
 	}
 }

@@ -11,10 +11,12 @@ package weather;
 import simulator.vehicles.Coordinates;
 
 public class WeatherProvider {
-	private static WeatherProvider weatherprovider=null;
+	private static WeatherProvider weatherprovider;
 	private String weather[] = {"RAIN", "FOG", "SUN", "SNOW"};
 	
-	private WeatherProvider() {}
+	private WeatherProvider() {
+		weatherprovider = this;
+	}
 	
 	public static WeatherProvider getProvider() {
 		if (weatherprovider == null) {

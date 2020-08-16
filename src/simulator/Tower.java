@@ -8,36 +8,25 @@
 
 package simulator;
 
+import simulator.vehicles.Baloon;
 import simulator.vehicles.Flyable;
-import java.io.File;
-import java.io.FileNotFoundException;
+import simulator.vehicles.Helicopter;
+import simulator.vehicles.JetPlane;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-//import 
 
 public class Tower{
 	private List<Flyable> observers = new ArrayList<>();
 	
 	public void register(Flyable flyable) {//register all the observers that need to know of changes
-		try {
-			File myobj = new File("D:\\workstation\\avaj_launchar\\txt/data.txt");
-			Scanner myReader = new Scanner(myobj);
-			int i = 0;
-			while(myReader.hasNextLine()) {
-				String data = myReader.nextLine();
-				String str[] = data.split(" ");
-				if (i!=0)
-				{
-					observers.add(flyable);
-					System.out.println("Tower says: "+str[0]+ "#" + str[1]+"("+i+") registered to weather tower.");
-				}
-				i++;
-			}
-			myReader.close();
-		}catch(FileNotFoundException e) {
-			e.printStackTrace();
-			System.out.println("something broken cuz");
+		observers.add(flyable);
+		
+		if (flyable instanceof JetPlane) {
+			System.out.printf("Tower says: JetPlane#&s(%d)", ((JetPlane)flyable).getName(), ((JetPlane)flyable).getId());
+		}else if (flyable instanceof Helicopter) {
+			System.out.printf("Tower says: Helicopter#&s(%d)", ((Helicopter)flyable).getName(), ((Helicopter)flyable).getId());
+		}else if (flyable instanceof Baloon) {
+			System.out.printf("Tower says: Baloon#&s(%d)", ((Baloon)flyable).getName(), ((Baloon)flyable).getId());
 		}
 	}
 

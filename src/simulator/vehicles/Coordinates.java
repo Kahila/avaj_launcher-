@@ -15,7 +15,10 @@ public class Coordinates {
 	
 	Coordinates(int longitude, int latitude, int height){
 		this.longitude = longitude;
-		this.height = height;
+		if (height > 100)
+			this.height = 100;
+		else
+			this.height = height;
 		this.latitude = latitude;
 	}
 	
