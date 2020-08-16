@@ -9,15 +9,15 @@
 package simulator;
 
 import simulator.vehicles.Flyable;
-import simulator.vehicles.JetPlane;
-
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 //import 
 
 public class Tower{
-	private Flyable observers[];
+	private List<Flyable> observers = new ArrayList<>();
 	
 	public void register(Flyable flyable) {//register all the observers that need to know of changes
 		try {
@@ -29,7 +29,7 @@ public class Tower{
 				String str[] = data.split(" ");
 				if (i!=0)
 				{
-					observers[i] = flyable;
+					observers.add(flyable);
 					System.out.println("Tower says: "+str[0]+ "#" + str[1]+"("+i+") registered to weather tower.");
 				}
 				i++;
@@ -42,10 +42,12 @@ public class Tower{
 	}
 
 	public void unregister(Flyable flyable) {//remove all the observers that don't want to know changes
-		flyable = null;
+		observers.remove(flyable);
 	}
 	
 	protected void conditionsChanged() {//notify all observers of changes made
-		
+		for (Flyable ob: observers) {
+			ob.updateCondition();
+		}
 	}
 }

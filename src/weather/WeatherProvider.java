@@ -1,4 +1,14 @@
+/**
+ * 
+ * @author akalombo
+ * @version 1.0
+ * @since 2020-08-04
+ * @filename WeatherProvider
+ * */
+
 package weather;
+
+import simulator.vehicles.Coordinates;
 
 public class WeatherProvider {
 	private static WeatherProvider weatherprovider=null;

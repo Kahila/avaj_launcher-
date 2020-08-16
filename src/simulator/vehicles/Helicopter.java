@@ -1,7 +1,14 @@
+/**
+ * 
+ * @author akalombo
+ * @version 1.0
+ * @since 2020-08-04
+ * @filename Helicopter
+ * */
+
 package simulator.vehicles;
 
 import simulator.WeatherTower;
-import weather.Coordinates;
 import simulator.vehicles.Flyable;
 
 public class Helicopter extends Aircraft implements Flyable{

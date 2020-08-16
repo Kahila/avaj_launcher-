@@ -2,6 +2,14 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+/**
+ * 
+ * @author akalombo
+ * @version 1.0
+ * @since 2020-08-04
+ * @filename Main
+ * */
+
 import java.util.Scanner;
 
 public class Main {

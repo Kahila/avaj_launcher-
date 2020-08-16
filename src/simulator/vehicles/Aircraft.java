@@ -1,6 +1,14 @@
+/**
+ * 
+ * @author akalombo
+ * @version 1.0
+ * @since 2020-08-04
+ * @filename Aircraft
+ * */
+
 package simulator.vehicles;
 
-import weather.Coordinates;
+import simulator.vehicles.Coordinates;
 
 public class Aircraft {
 	protected long id;
