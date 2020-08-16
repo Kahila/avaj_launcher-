@@ -1,28 +1,27 @@
+/**
+ * 
+ * @author akalombo
+ * @version 1.0
+ * @since 2020-08-04
+ * @filename WeatherTower
+ * */
+
 package simulator;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
-
+import weather.WeatherProvider;
 import simulator.Tower;
 import weather.Coordinates;
 
 public class WeatherTower extends Tower{
 	
-	public String getWeatherCoordinates(Coordinates coordinates) {
-		File file = new File("file name");
-		Scanner txtin = null;
-		try {
-			txtin = new Scanner(file);
-//			while ()
-		}catch(IOException ex){
-			
-		}
-		//coordinates = new Coordinates();
-		return("Adonis");
+	public String getWeather(Coordinates coordinates) { //this method will be used to generate weather
+		WeatherProvider provider = null;
+		
+		provider.getProvider();
+		return (provider.getCurrentWeather(coordinates));
 	}
 	
-	public void changeWeather() {
+	public void changeWeather() {//update the state and call conditionChanged method to update the condition
 		
 	}
 }

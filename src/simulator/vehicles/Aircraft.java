@@ -13,11 +13,6 @@ public class Aircraft {
 		this.coordinates = coordinates;
 	}
 	
-	
-	/**this method creates Id's for the flyables
-	 * 
-	 * @return
-	 */
 	private long nextId(){
 		return (idCounter++);
 	}

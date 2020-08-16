@@ -18,7 +18,6 @@ public class JetPlane extends Aircraft implements Flyable{
 	
 	@Override
 	public void registerTower(WeatherTower weatherTower) {
-		weatherTower = new WeatherTower();
-		this.name = weatherTower.getWeatherCoordinates(coordinates);
+	
 	}
 }
