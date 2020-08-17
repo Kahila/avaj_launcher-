@@ -1,7 +1,3 @@
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 /**
  * 
  * @author akalombo
@@ -10,17 +6,27 @@ import java.io.IOException;
  * @filename Main
  * */
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 import simulator.vehicles.*;
 import simulator.WeatherTower;
-//import simulator.vehicles.Aircraft;
-//import simulator.vehicles.Helicopter;
+import simulator.Logger;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		try {
 			File myobj = new File("D:\\workstation\\avaj_launchar\\txt/data.txt");
+			File newFile = new File("simulation.txt");
+			int repetition = 0;
+			
+			if (newFile.createNewFile()) {
+				System.out.printf("File has been created\n");
+			}else {
+				System.out.println("file exists");
+			}
 			
 			WeatherTower tower = new WeatherTower();
 			AircraftFactory factory = new AircraftFactory();
@@ -38,22 +44,23 @@ public class Main {
 					longitude = Integer.parseInt(str[2]);
 					latitude = Integer.parseInt(str[3]);
 					height = Integer.parseInt(str[4]);
-					
-					tower.reg(factory.newAircraft(str[0], name, longitude, latitude, height));
-					
-					//System.out.println(longitude);					
+					tower.reg(factory.newAircraft(str[0], name, longitude, latitude, height));					
+				}else {
+					repetition = Integer.parseInt(data);
 				}
 				i++;
 			}
-			while (i > 0)
+			i = 0;
+			while (i < repetition)
 			{
 				tower.changeWeather();
-				i--;
+				i++;
 			}
 			myReader.close();
+			Logger.closeFile();
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
-			System.out.println("something broken cuz");
+			System.out.println("File not found");
 		}
 		
 	}

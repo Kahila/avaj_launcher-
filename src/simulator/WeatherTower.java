@@ -15,12 +15,12 @@ import simulator.vehicles.Flyable;
 
 public class WeatherTower extends Tower{
 	
-	public String getWeather(Coordinates coordinates) { //this method will be used to generate weather
+	public String getWeather(Coordinates coordinates) {
 		WeatherProvider provider = WeatherProvider.getProvider();
 		return (provider.getCurrentWeather(coordinates));
 	}
 	
-	public void changeWeather() {//make changes to the coordinates accordingly
+	public void changeWeather() {
 		this.conditionsChanged();
 	}
 	

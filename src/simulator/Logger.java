@@ -1,22 +1,25 @@
 package simulator;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Logger {
+	private static FileWriter fw = null;
 	
-	public void writeToFile(String path, String msg) {
-		File file = new File(path);
-		PrintWriter txtout = null;
-		
+	public static void writer(String str)
+	{
 		try {
-			txtout = new PrintWriter(file);
-			txtout.println(msg);
-		}catch(FileNotFoundException ex) {
-			ex.printStackTrace();
-		}finally {
-			if (txtout != null) txtout.close();
+			if (fw == null)
+				fw = new FileWriter("simulation.txt");
+			fw.write(str+"\n");
+		}catch(IOException e) {
+			e.printStackTrace();
 		}
 	}
+	
+	public static void closeFile() throws IOException {
+		if (fw != null)
+			fw.close();
+	}
+	
 }

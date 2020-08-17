@@ -13,26 +13,29 @@ import simulator.vehicles.Baloon;
 import simulator.vehicles.Flyable;
 import simulator.vehicles.Helicopter;
 import simulator.vehicles.JetPlane;
+import simulator.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Tower{
 	private List<Flyable> observers = new ArrayList<>();
 	
-	public void register(Flyable flyable) {//register all the observers that need to know of changes
+	public void register(Flyable flyable) {
 		observers.add(flyable);
 		
+		
 		if (flyable instanceof JetPlane) {
-			System.out.printf("Tower says: JetPlane#%s(%d) registered to weather tower\n", ((JetPlane)flyable).getName(), ((JetPlane)flyable).getId());
+			Logger.writer("Tower says: JetPlane#"+ ((JetPlane)flyable).getName()+"("+ ((JetPlane)flyable).getId() + ")" + "registered to weather tower.");
 		}else if (flyable instanceof Helicopter) {
-			System.out.printf("Tower says: Helicopter#%s(%d) registered to weather tower\n", ((Helicopter)flyable).getName(), ((Helicopter)flyable).getId());
+			Logger.writer("Tower says: Helicopter#"+ ((Helicopter)flyable).getName()+"("+ ((Helicopter)flyable).getId() + ")" + "registered to weather tower.");
 		}else if (flyable instanceof Baloon) {
-			System.out.printf("Tower says: Baloon#%s(%d) registered to weather tower\n", ((Baloon)flyable).getName(), ((Baloon)flyable).getId());
+			Logger.writer("Tower says: Baloon#"+ ((Baloon)flyable).getName()+"("+ ((Baloon)flyable).getId() + ")" + "registered to weather tower.");
 		}
 	}
 
-	public void unregister(Flyable flyable) {//remove all the observers that don't want to know changes
-		long id = 0;
+	public void unregister(Flyable flyable) {
+		long id = 1;
+			
 		if (flyable instanceof Aircraft)
 			id =  ((Aircraft)flyable).getId();
 		int i = 0;
@@ -42,15 +45,15 @@ public class Tower{
 					break;
 			}
 			i++;
-		}if (i > 0) {
+		}if (i >= 0) {
 			if (flyable instanceof JetPlane) {
-				System.out.printf("Tower says: JetPlane#%s(%d) unregistered from weather tower\n", ((JetPlane)flyable).getName(), ((JetPlane)flyable).getId());
+				Logger.writer("Tower says: JetPlane#"+ ((JetPlane)flyable).getName()+"("+ ((JetPlane)flyable).getId() + ")" + "unregistered from weather tower.");
 			}else if (flyable instanceof Helicopter) {
-				System.out.printf("Tower says: Helicopter#%s(%d) unregistered from weather tower\n", ((Helicopter)flyable).getName(), ((Helicopter)flyable).getId());
+				Logger.writer("Tower says: Helicopter#"+ ((Helicopter)flyable).getName()+"("+ ((Helicopter)flyable).getId() + ")" + "unregistered from weather tower.");
 			}else if (flyable instanceof Baloon) {
-				System.out.printf("Tower says: Baloon#%s(%d) unregistered from weather tower\n", ((Baloon)flyable).getName(), ((Baloon)flyable).getId());
+				Logger.writer("Tower says: Baloon#"+ ((Baloon)flyable).getName()+"("+ ((Baloon)flyable).getId() + ")" + "unregistered from weather tower.");
 			}
-			observers.remove(i);			
+			observers.remove(i);
 		}
 	}
 	
