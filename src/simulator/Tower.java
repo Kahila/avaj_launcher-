@@ -8,6 +8,7 @@
 
 package simulator;
 
+import simulator.vehicles.Aircraft;
 import simulator.vehicles.Baloon;
 import simulator.vehicles.Flyable;
 import simulator.vehicles.Helicopter;
@@ -31,12 +32,26 @@ public class Tower{
 	}
 
 	public void unregister(Flyable flyable) {//remove all the observers that don't want to know changes
-		observers.remove(flyable);
+		long id = 0;
+		if (flyable instanceof Aircraft)
+			id =  ((Aircraft)flyable).getId();
+		int i = 0;
+		for (Flyable ob : observers) {
+			if (ob instanceof Aircraft) {
+				if (((Aircraft)ob).getId() == id)
+					break;
+			}
+			i++;
+		}if (i > 0) {
+			observers.remove(i);			
+		}
 	}
 	
 	protected void conditionsChanged() {//notify all observers of changes made
-		for (Flyable ob: observers) {
-				ob.updateCondition();
+		if (observers.isEmpty() == false) {
+			for (int i = 0; i < observers.size(); i++) {
+				observers.get(i).updateCondition();
+			}
 		}
 	}
 }
