@@ -43,6 +43,13 @@ public class Tower{
 			}
 			i++;
 		}if (i > 0) {
+			if (flyable instanceof JetPlane) {
+				System.out.printf("Tower says: JetPlane#%s(%d) unregistered from weather tower\n", ((JetPlane)flyable).getName(), ((JetPlane)flyable).getId());
+			}else if (flyable instanceof Helicopter) {
+				System.out.printf("Tower says: Helicopter#%s(%d) unregistered from weather tower\n", ((Helicopter)flyable).getName(), ((Helicopter)flyable).getId());
+			}else if (flyable instanceof Baloon) {
+				System.out.printf("Tower says: Baloon#%s(%d) unregistered from weather tower\n", ((Baloon)flyable).getName(), ((Baloon)flyable).getId());
+			}
 			observers.remove(i);			
 		}
 	}

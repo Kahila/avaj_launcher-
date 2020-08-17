@@ -26,21 +26,21 @@ public class JetPlane extends Aircraft implements Flyable{
 		if (weather == "RAIN") {
 			System.out.printf("%sTry catching all the rain drops.\n", observer);
 			if ((this.coordinates.getHeight()) <= 0) {
-				System.out.printf("%slanding", observer);
+				System.out.printf("%slanding\n", observer);
 				this.weatherTower.unregister(this);
 			}else
 				this.coordinates = new Coordinates(this.coordinates.getLongitude(), this.coordinates.getLatitude() + 5, this.coordinates.getHeight());
 		}else if (weather == "SNOW") {
 			System.out.printf("%swe'll die from the flu :(\n", observer);
 			if ((this.coordinates.getHeight() - 7) <= 0) {
-				System.out.printf("%slanding", observer);
+				System.out.printf("%slanding\n", observer);
 				this.weatherTower.unregister(this);
 			}else
 				this.coordinates = new Coordinates(this.coordinates.getLongitude(), this.coordinates.getLatitude(), this.coordinates.getHeight()-7);
 		}else if (weather == "FOG") {
 			System.out.printf("%sCan anyone find my face?\n", observer);
 			if ((this.coordinates.getHeight()) <= 0) {
-				System.out.printf("%slanding", observer);
+				System.out.printf("%slanding\n", observer);
 				this.weatherTower.unregister(this);
 			}else
 				this.coordinates = new Coordinates(this.coordinates.getLongitude(), this.coordinates.getLatitude()+1, this.coordinates.getHeight());

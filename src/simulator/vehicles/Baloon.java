@@ -26,7 +26,7 @@ public class Baloon extends Aircraft implements Flyable {
 		if (weather == "RAIN") {
 			System.out.printf("%sThe heavens are crying\n", observer);
 			if ((this.coordinates.getHeight() - 5) <= 0) {
-				System.out.printf("%slanding", observer);
+				System.out.printf("%slanding\n", observer);
 				this.weatherTower.unregister(this);
 			}else
 				this.coordinates = new Coordinates(this.coordinates.getLongitude(), this.coordinates.getLatitude(), this.coordinates.getHeight()-5);
@@ -47,7 +47,7 @@ public class Baloon extends Aircraft implements Flyable {
 		}else if (weather == "SUN") {
 			System.out.printf("%sI think we're getting to close to the sun\n", observer);
 			if ((this.coordinates.getHeight()) <= 0) {
-				System.out.printf("%slanding", observer);
+				System.out.printf("%slanding\n", observer);
 				this.weatherTower.unregister(this);
 			}else
 				this.coordinates = new Coordinates(this.coordinates.getLongitude() + 2, this.coordinates.getLatitude(), this.coordinates.getHeight());
