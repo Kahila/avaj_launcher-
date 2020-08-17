@@ -10,7 +10,7 @@ public class Logger {
 	{
 		try {
 			if (fw == null)
-				fw = new FileWriter("simulation.txt");
+				fw = new FileWriter("../simulation.txt");
 			fw.write(str+"\n");
 		}catch(IOException e) {
 			e.printStackTrace();

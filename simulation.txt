@@ -7,147 +7,161 @@ Tower says: Helicopter#H3(6)registered to weather tower.
 Tower says: Baloon#B3(7)registered to weather tower.
 Tower says: JetPlane#J2(8)registered to weather tower.
 Tower says: Helicopter#H4(9)registered to weather tower.
-Baloon#B1(1): I wasn't made for winter!!.
-Baloon#B2(2): I wasn't made for winter!!.
-JetPlane#J1(3): Such a sunny day :).
-Helicopter#H1(4): Can't see anything.
-Helicopter#H2(5): I wasn't made for winter!!.
-Helicopter#H3(6): I wasn't made for winter!!.
-Baloon#B3(7): I think we're getting to close to the sun.
-JetPlane#J2(8): Try catching all the rain drops.
-Helicopter#H4(9): I wasn't made for winter!!.
 Baloon#B1(1): The heavens are crying.
+Baloon#B2(2): The heavens are crying.
+JetPlane#J1(3): Can anyone find my face?
+Helicopter#H1(4): The sun is killing my eyes.
+Helicopter#H2(5): The sun is killing my eyes.
+Helicopter#H3(6): Can't see anything.
+Baloon#B3(7): I think we're getting to close to the sun.
+JetPlane#J2(8): Such a sunny day :).
+Helicopter#H4(9): The heavens are crying.
+Baloon#B1(1): The heavens are crying.
+Baloon#B2(2): The heavens are crying.
+JetPlane#J1(3): Can anyone find my face?
+Helicopter#H1(4): Can't see anything.
+Helicopter#H2(5): The heavens are crying.
+Helicopter#H3(6): Can't see anything.
+Baloon#B3(7): Somnebody help I cant see my face!!.
+JetPlane#J2(8): Such a sunny day :).
+Helicopter#H4(9): The heavens are crying.
+Baloon#B1(1): I wasn't made for winter!!.
 Baloon#B1(1): landing
 Tower says: Baloon#B1(1)unregistered from weather tower.
 JetPlane#J1(3): Try catching all the rain drops.
 Helicopter#H1(4): The heavens are crying.
-Helicopter#H2(5): I wasn't made for winter!!.
+Helicopter#H2(5): The heavens are crying.
+Helicopter#H3(6): The sun is killing my eyes.
+Baloon#B3(7): I think we're getting to close to the sun.
+JetPlane#J2(8): Can anyone find my face?
+Helicopter#H4(9): Can't see anything.
+Baloon#B2(2): I wasn't made for winter!!.
+JetPlane#J1(3): Try catching all the rain drops.
+Helicopter#H1(4): Can't see anything.
+Helicopter#H2(5): The sun is killing my eyes.
 Helicopter#H3(6): The heavens are crying.
 Baloon#B3(7): I wasn't made for winter!!.
 JetPlane#J2(8): Such a sunny day :).
 Helicopter#H4(9): The heavens are crying.
 Baloon#B2(2): I wasn't made for winter!!.
-JetPlane#J1(3): we'll die from the flu :(.
-Helicopter#H1(4): The heavens are crying.
-Helicopter#H2(5): The heavens are crying.
-Helicopter#H3(6): The sun is killing my eyes.
-Baloon#B3(7): I think we're getting to close to the sun.
+JetPlane#J1(3): Can anyone find my face?
+Helicopter#H1(4): The sun is killing my eyes.
+Helicopter#H2(5): I wasn't made for winter!!.
+Helicopter#H3(6): The heavens are crying.
+Baloon#B3(7): The heavens are crying.
 JetPlane#J2(8): we'll die from the flu :(.
-Helicopter#H4(9): The heavens are crying.
-Baloon#B2(2): Somnebody help I cant see my face!!.
+Helicopter#H4(9): I wasn't made for winter!!.
+Baloon#B2(2): The heavens are crying.
 JetPlane#J1(3): we'll die from the flu :(.
 Helicopter#H1(4): I wasn't made for winter!!.
 Helicopter#H2(5): The heavens are crying.
 Helicopter#H3(6): The heavens are crying.
-Baloon#B3(7): The heavens are crying.
+Baloon#B3(7): I think we're getting to close to the sun.
 JetPlane#J2(8): Try catching all the rain drops.
 Helicopter#H4(9): I wasn't made for winter!!.
+Baloon#B2(2): Somnebody help I cant see my face!!.
+JetPlane#J1(3): Try catching all the rain drops.
+Helicopter#H1(4): The heavens are crying.
+Helicopter#H2(5): The heavens are crying.
+Helicopter#H3(6): I wasn't made for winter!!.
+Baloon#B3(7): The heavens are crying.
+JetPlane#J2(8): Try catching all the rain drops.
+Helicopter#H4(9): Can't see anything.
 Baloon#B2(2): The heavens are crying.
+JetPlane#J1(3): Can anyone find my face?
+Helicopter#H1(4): The heavens are crying.
+Helicopter#H2(5): The heavens are crying.
+Helicopter#H3(6): Can't see anything.
+Baloon#B3(7): The heavens are crying.
+JetPlane#J2(8): we'll die from the flu :(.
+Helicopter#H4(9): I wasn't made for winter!!.
+Baloon#B2(2): I think we're getting to close to the sun.
+JetPlane#J1(3): we'll die from the flu :(.
+Helicopter#H1(4): Can't see anything.
+Helicopter#H2(5): I wasn't made for winter!!.
+Helicopter#H3(6): The heavens are crying.
+Baloon#B3(7): The heavens are crying.
+Baloon#B3(7): landing
+Tower says: Baloon#B3(7)unregistered from weather tower.
+Helicopter#H4(9): The heavens are crying.
+Baloon#B2(2): I wasn't made for winter!!.
+Baloon#B2(2): landing
+Tower says: Baloon#B2(2)unregistered from weather tower.
+Helicopter#H1(4): The heavens are crying.
+Helicopter#H2(5): Can't see anything.
+Helicopter#H3(6): I wasn't made for winter!!.
+JetPlane#J2(8): we'll die from the flu :(.
+Helicopter#H4(9): Can't see anything.
+JetPlane#J1(3): Try catching all the rain drops.
+Helicopter#H1(4): The heavens are crying.
+Helicopter#H2(5): The heavens are crying.
+Helicopter#H3(6): The heavens are crying.
+JetPlane#J2(8): Try catching all the rain drops.
+Helicopter#H4(9): I wasn't made for winter!!.
+JetPlane#J1(3): Can anyone find my face?
+Helicopter#H1(4): Can't see anything.
+Helicopter#H2(5): The heavens are crying.
+Helicopter#H3(6): Can't see anything.
+JetPlane#J2(8): Such a sunny day :).
+Helicopter#H4(9): The heavens are crying.
 JetPlane#J1(3): Such a sunny day :).
 Helicopter#H1(4): I wasn't made for winter!!.
 Helicopter#H1(4): landing
 Tower says: Helicopter#H1(4)unregistered from weather tower.
-Helicopter#H3(6): I wasn't made for winter!!.
-Baloon#B3(7): I think we're getting to close to the sun.
-JetPlane#J2(8): Can anyone find my face?
+Helicopter#H3(6): The heavens are crying.
+JetPlane#J2(8): Try catching all the rain drops.
 Helicopter#H4(9): The sun is killing my eyes.
-Baloon#B2(2): I think we're getting to close to the sun.
 JetPlane#J1(3): Can anyone find my face?
-Helicopter#H2(5): Can't see anything.
-Helicopter#H3(6): The heavens are crying.
-Baloon#B3(7): The heavens are crying.
-JetPlane#J2(8): Try catching all the rain drops.
-Helicopter#H4(9): The heavens are crying.
-Baloon#B2(2): I think we're getting to close to the sun.
-JetPlane#J1(3): Can anyone find my face?
-Helicopter#H2(5): The sun is killing my eyes.
-Helicopter#H3(6): The sun is killing my eyes.
-Baloon#B3(7): I think we're getting to close to the sun.
-JetPlane#J2(8): Such a sunny day :).
-Helicopter#H4(9): The heavens are crying.
-Baloon#B2(2): I think we're getting to close to the sun.
-JetPlane#J1(3): Such a sunny day :).
-Helicopter#H2(5): The heavens are crying.
-Helicopter#H3(6): I wasn't made for winter!!.
-Baloon#B3(7): The heavens are crying.
-JetPlane#J2(8): Try catching all the rain drops.
-Helicopter#H4(9): The heavens are crying.
-Baloon#B2(2): Somnebody help I cant see my face!!.
-JetPlane#J1(3): Can anyone find my face?
-Helicopter#H2(5): Can't see anything.
-Helicopter#H3(6): The heavens are crying.
-Baloon#B3(7): I think we're getting to close to the sun.
-JetPlane#J2(8): Such a sunny day :).
-Helicopter#H4(9): Can't see anything.
-Baloon#B2(2): I wasn't made for winter!!.
-JetPlane#J1(3): we'll die from the flu :(.
-Helicopter#H2(5): I wasn't made for winter!!.
-Helicopter#H3(6): I wasn't made for winter!!.
-Baloon#B3(7): I wasn't made for winter!!.
-Baloon#B3(7): landing
-Tower says: Baloon#B3(7)unregistered from weather tower.
-Helicopter#H4(9): I wasn't made for winter!!.
-Baloon#B2(2): I wasn't made for winter!!.
-Baloon#B2(2): landing
-Tower says: Baloon#B2(2)unregistered from weather tower.
 Helicopter#H2(5): The heavens are crying.
 Helicopter#H3(6): I wasn't made for winter!!.
 JetPlane#J2(8): Can anyone find my face?
-Helicopter#H4(9): Can't see anything.
-JetPlane#J1(3): Can anyone find my face?
+Helicopter#H4(9): The heavens are crying.
+JetPlane#J1(3): Try catching all the rain drops.
 Helicopter#H2(5): The sun is killing my eyes.
-Helicopter#H3(6): I wasn't made for winter!!.
-JetPlane#J2(8): we'll die from the flu :(.
-Helicopter#H4(9): The sun is killing my eyes.
-JetPlane#J1(3): Try catching all the rain drops.
-Helicopter#H2(5): I wasn't made for winter!!.
-Helicopter#H2(5): landing
-Tower says: Helicopter#H2(5)unregistered from weather tower.
+Helicopter#H3(6): Can't see anything.
 JetPlane#J2(8): Can anyone find my face?
 Helicopter#H4(9): Can't see anything.
-JetPlane#J1(3): we'll die from the flu :(.
-Helicopter#H3(6): The heavens are crying.
-JetPlane#J2(8): Try catching all the rain drops.
-Helicopter#H4(9): I wasn't made for winter!!.
 JetPlane#J1(3): Such a sunny day :).
-Helicopter#H3(6): The heavens are crying.
-JetPlane#J2(8): Try catching all the rain drops.
-Helicopter#H4(9): Can't see anything.
-JetPlane#J1(3): Such a sunny day :).
-Helicopter#H3(6): The heavens are crying.
-JetPlane#J2(8): Such a sunny day :).
-Helicopter#H4(9): The heavens are crying.
-JetPlane#J1(3): Such a sunny day :).
+Helicopter#H2(5): The heavens are crying.
 Helicopter#H3(6): I wasn't made for winter!!.
 JetPlane#J2(8): we'll die from the flu :(.
 Helicopter#H4(9): The heavens are crying.
-JetPlane#J1(3): we'll die from the flu :(.
-Helicopter#H3(6): The heavens are crying.
-JetPlane#J2(8): Try catching all the rain drops.
-Helicopter#H4(9): The sun is killing my eyes.
-JetPlane#J1(3): we'll die from the flu :(.
-Helicopter#H3(6): I wasn't made for winter!!.
-JetPlane#J2(8): Try catching all the rain drops.
-Helicopter#H4(9): The sun is killing my eyes.
-JetPlane#J1(3): Can anyone find my face?
-Helicopter#H3(6): The heavens are crying.
-JetPlane#J2(8): Can anyone find my face?
-Helicopter#H4(9): Can't see anything.
-JetPlane#J1(3): Can anyone find my face?
-Helicopter#H3(6): The sun is killing my eyes.
-JetPlane#J2(8): Such a sunny day :).
-Helicopter#H4(9): The sun is killing my eyes.
 JetPlane#J1(3): Try catching all the rain drops.
-Helicopter#H3(6): I wasn't made for winter!!.
-Helicopter#H3(6): landing
-Tower says: Helicopter#H3(6)unregistered from weather tower.
-Helicopter#H4(9): I wasn't made for winter!!.
-JetPlane#J1(3): Such a sunny day :).
-JetPlane#J2(8): Such a sunny day :).
+Helicopter#H2(5): The sun is killing my eyes.
+Helicopter#H3(6): The heavens are crying.
+JetPlane#J2(8): we'll die from the flu :(.
 Helicopter#H4(9): I wasn't made for winter!!.
 Helicopter#H4(9): landing
 Tower says: Helicopter#H4(9)unregistered from weather tower.
-JetPlane#J1(3): we'll die from the flu :(.
-JetPlane#J1(3): landing
-Tower says: JetPlane#J1(3)unregistered from weather tower.
+JetPlane#J1(3): Try catching all the rain drops.
+Helicopter#H2(5): The sun is killing my eyes.
+Helicopter#H3(6): The heavens are crying.
 JetPlane#J2(8): Such a sunny day :).
+JetPlane#J1(3): Such a sunny day :).
+Helicopter#H2(5): I wasn't made for winter!!.
+Helicopter#H3(6): The heavens are crying.
+JetPlane#J2(8): Such a sunny day :).
+JetPlane#J1(3): we'll die from the flu :(.
+Helicopter#H2(5): Can't see anything.
+Helicopter#H3(6): The sun is killing my eyes.
+JetPlane#J2(8): Such a sunny day :).
+JetPlane#J1(3): we'll die from the flu :(.
+Helicopter#H2(5): The heavens are crying.
+Helicopter#H3(6): The heavens are crying.
+JetPlane#J2(8): Can anyone find my face?
+JetPlane#J1(3): Can anyone find my face?
+Helicopter#H2(5): The heavens are crying.
+Helicopter#H3(6): The heavens are crying.
+JetPlane#J2(8): Try catching all the rain drops.
+JetPlane#J1(3): Such a sunny day :).
+Helicopter#H2(5): Can't see anything.
+Helicopter#H3(6): The heavens are crying.
+JetPlane#J2(8): we'll die from the flu :(.
+JetPlane#J1(3): we'll die from the flu :(.
+Helicopter#H2(5): The sun is killing my eyes.
+Helicopter#H3(6): The sun is killing my eyes.
+JetPlane#J2(8): Try catching all the rain drops.
+JetPlane#J1(3): Try catching all the rain drops.
+Helicopter#H2(5): Can't see anything.
+Helicopter#H3(6): I wasn't made for winter!!.
+JetPlane#J2(8): Try catching all the rain drops.
