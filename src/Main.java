@@ -13,6 +13,8 @@ import java.util.Scanner;
 import simulator.vehicles.*;
 import simulator.WeatherTower;
 import simulator.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
 
@@ -46,7 +48,14 @@ public class Main {
 					height = Integer.parseInt(str[4]);
 					tower.reg(factory.newAircraft(str[0], name, longitude, latitude, height));					
 				}else {
-					repetition = Integer.parseInt(data);
+					Pattern pattern = Pattern.compile("[0-9]+");
+					Matcher matcher = pattern.matcher(data);
+					if (matcher.matches()) {;
+						repetition = Integer.parseInt(data);
+					}else {
+						System.out.printf("invalid line found");
+						System.exit(-1);
+					}
 				}
 				i++;
 			}

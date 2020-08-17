@@ -29,6 +29,7 @@ public class AircraftFactory {
 			baloon = new Baloon(name, coordinates);
 			return (baloon);
 		}
+		System.out.println("Error found in file");
 		System.exit(-1);
 		return (null);
 	}
