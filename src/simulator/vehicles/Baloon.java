@@ -39,7 +39,7 @@ public class Baloon extends Aircraft implements Flyable {
 			}else
 				this.coordinates = new Coordinates(this.coordinates.getLongitude(), this.coordinates.getLatitude(), this.coordinates.getHeight()-15);
 		}else if (weather == "FOG") {
-			Logger.writer(observer + "Somnebody help I cant see my face!!.");
+			Logger.writer(observer + "Somebody help I cant see my face!!.");
 			if ((this.coordinates.getHeight() - 3) <= 0) {
 				Logger.writer(observer + "landing");
 				this.weatherTower.unregister(this);

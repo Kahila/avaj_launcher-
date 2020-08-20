@@ -17,7 +17,7 @@ import simulator.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tower{
+public abstract class Tower{
 	private List<Flyable> observers = new ArrayList<>();
 	
 	public void register(Flyable flyable) {
@@ -57,7 +57,7 @@ public class Tower{
 		}
 	}
 	
-	protected void conditionsChanged() {//notify all observers of changes made
+	protected void conditionsChanged() {
 		if (observers.isEmpty() == false) {
 			for (int i = 0; i < observers.size(); i++) {
 				observers.get(i).updateCondition();

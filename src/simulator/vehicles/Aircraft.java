@@ -10,7 +10,7 @@ package simulator.vehicles;
 
 import simulator.vehicles.Coordinates;
 
-public class Aircraft {
+public abstract class Aircraft {
 	protected long id;
 	protected String name;
 	protected Coordinates coordinates;
