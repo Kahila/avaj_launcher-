@@ -1,4 +1,3 @@
-package simulator;
 /**
  * 
  * @author akalombo
@@ -6,7 +5,7 @@ package simulator;
  * @since 2020-08-04
  * @filename Main
  * */
-
+package simulator;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -70,7 +69,7 @@ public class Main extends AircraftFactory{
 				int height = 0, longitude = 0, latitude = 0;
 				String name = "";
 				if (str.length != 5 && i != 0) {
-					System.out.printf("Invalid input detected");
+					System.out.printf("amount of value passed are incorrect\n", i+1);
 					System.exit(-1);
 				}
 				if (i!=0)
@@ -82,7 +81,7 @@ public class Main extends AircraftFactory{
 							System.exit(-1);
 						}
 					}catch(IllegalArgumentException pe) {
-						System.out.printf("invalid line found");
+						System.out.printf("invalid input found");
 						System.exit(-1);
 					}
 					
